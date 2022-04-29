@@ -1,0 +1,103 @@
+{
+  "passVersion": "1.0",
+  "passTypeIdentifier": "hwpass.cloudticket",
+  "passStyleIdentifier": "WalletDemo12568",
+  "organizationName": "XXX Airlines",
+  "fields": {
+    "countryCode": "tr",
+    "locationList": [
+      {
+        "longitude": "longitude",
+        "latitude": "latitude"
+      }
+    ],
+    "commonFields": [
+      {
+        "key": "logo",
+        "value": "logo_image_url"
+      },
+      {
+        "key": "merchantName",
+        "value": "XXX Airlines",
+        "localizedValue": "merchantNameI18N"
+      },
+      {
+        "key": "flightNumber",
+        "value": "flightNumber"
+      },
+      {
+        "key": "departureTerminal",
+        "value": "T5"
+      },
+      {
+        "key": "boardingGate",
+        "value": "25"
+      },
+      {
+        "key": "departureCity",
+        "value": "Istanbul Airport"
+      },
+      {
+        "key": "arrivalTerminal",
+        "value": "T3"
+      },
+      {
+        "key": "arrivalCity",
+        "value": "Ankara"
+      }
+    ],
+    "appendFields": [
+      {
+        "key": "backgroundColor",
+        "value": "#FF1C2635"
+      }
+    ],
+    "imageList": [
+      {
+        "key": "mainImage[0]",
+        "value": ""
+      }
+    ],
+    "messageList": [
+      {
+        "key": "message[0]",
+        "value": "Enjoy the flight!",
+        "label": "Message"
+      }
+    ],
+    "timeList": [
+      {
+        "key": "departureTime",
+        "value": "2020-05-09T10:30:00.010Z"
+      },
+      {
+        "key": "scheduledDepartureTime",
+        "value": "2020-05-09T10:30:00.010Z"
+      },
+      {
+        "key": "boardingTime",
+        "value": "2020-05-09T10:00:00.010Z"
+      },
+      {
+        "key": "arrivalTime",
+        "value": "2020-05-09T12:30:00.010Z"
+      },
+      {
+        "key": "scheduledArrivalTime",
+        "value": "2020-05-09T12:30:00.010Z"
+      }
+    ],
+    "localized": [
+      {
+        "key": "merchantNameI18N",
+        "language": "tr",
+        "value": "XXX Airlines"
+      },
+      {
+        "key": "merchantNameI18N",
+        "language": "en",
+        "value": "XXX Airlines"
+      }
+    ]
+  }
+}

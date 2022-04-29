@@ -1,0 +1,43 @@
+{
+  "passTypeIdentifier": "hwpass.cloudticket",
+  "passStyleIdentifier": "WalletDemo12568",
+  "organizationPassId": "543553543543536",
+  "serialNumber": "543553543543536",
+  "fields": {
+    "status": {
+      "state": "active",
+      "effectTime": "2020-04-06T00:00:00.111Z",
+      "expireTime": "2030-04-06T00:00:00.111Z"
+    },
+    "commonFields": [
+      {
+        "key": "seatNumber",
+        "value": "20C"
+      },
+      {
+        "key": "passengerName",
+        "value": "Omer Akkus"
+      },
+      {
+        "key": "boardingSequence",
+        "value": "1"
+      },
+      {
+        "key": "flightClass",
+        "value": "First Class"
+      }
+    ],
+    "appendFields": [
+      {
+        "key": "confirmationNumber",
+        "value": "ITK919"
+      }
+    ],
+    "barCode": {
+      "text": "4543535435435435",
+      "type": "qrCode",
+      "value": "4543535435435435",
+      "encoding": "UTF-8"
+    }
+  }
+}
