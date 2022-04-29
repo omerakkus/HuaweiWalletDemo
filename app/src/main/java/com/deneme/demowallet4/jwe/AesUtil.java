@@ -29,25 +29,13 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-/**
- * AES-encryption utility class.
- *
- * @since 2019-12-12
- */
 public class AesUtil {
     private static final BouncyCastleProvider BOUNCY_CASTLE_PROVIDER = new BouncyCastleProvider();
 
     public AesUtil() {
     }
 
-    /**
-     * AES-GCM encryption.
-     *
-     * @param plainData the data to be encrypted.
-     * @param secretKeyStr encryption secret key.
-     * @param iv encryption random iv.
-     * @return the encrypted string.
-     */
+    
     public static String encryptByGcm(String plainData, String secretKeyStr, byte[] iv) {
         try {
             byte[] secretKeyByte = secretKeyStr.getBytes(StandardCharsets.UTF_8);
@@ -63,12 +51,6 @@ public class AesUtil {
         }
     }
 
-    /**
-     * Generate encryption random iv.
-     *
-     * @param size iv length
-     * @return encryption the byte array.
-     */
     public static byte[] getIvByte(int size) {
         try {
             SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
