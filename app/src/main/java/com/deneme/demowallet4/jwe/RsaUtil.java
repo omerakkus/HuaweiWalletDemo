@@ -30,11 +30,6 @@ import java.util.Base64;
 
 import javax.crypto.Cipher;
 
-/**
- * RSA-encryption utility class.
- *
- * @since 2019-12-12
- */
 public class RsaUtil {
 
     /**
@@ -50,13 +45,6 @@ public class RsaUtil {
         }
     }
 
-    /**
-     * Sign content.
-     *
-     * @param content data to be signed.
-     * @param privateKey merchant's private key.
-     * @return the signed value.
-     */
     public static String sign(String content, String privateKey) {
         String charset = "utf-8";
         try {
@@ -75,14 +63,6 @@ public class RsaUtil {
         }
     }
 
-    /**
-     * Encrypt bytes.
-     *
-     * @param bytes bytes to be encrypted.
-     * @param publicKey public key.
-     * @param algorithm encryption algorithm.
-     * @return the encrypted string.
-     */
     public static String encrypt(byte[] bytes, String publicKey, String algorithm) throws Exception {
         Key key = getPublicKey(publicKey);
         Cipher cipher = Cipher.getInstance(algorithm, BOUNCY_CASTLE_PROVIDER);
@@ -103,14 +83,6 @@ public class RsaUtil {
         return keyFactory.generatePublic(keySpec);
     }
 
-    /**
-     * Verify a signature.
-     *
-     * @param content content of the signature.
-     * @param publicKey the public key string.
-     * @param sign the signature to be verified.
-     * @return if the signature is valid.
-     */
     public static boolean verifySignature(String content, String publicKey, String sign) throws Exception {
         PublicKey key = getPublicKey(publicKey);
         Signature signature = Signature.getInstance(SIGN_ALGORITHMS256);
