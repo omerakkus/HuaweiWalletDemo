@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createBoardingInstance(newInstance : JSONObject) {
-        val appId = "105745651"
+        val appId = "appId"
         newInstance["iss"] = appId
         val payload = newInstance.toJSONString()
         val jweSignPrivateKey = "privateKey"
