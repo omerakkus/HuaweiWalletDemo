@@ -15,8 +15,8 @@ class WalletServiceImpl(var context: Context) : WalletService {
     override fun postToWalletServer(
         body: JSONObject
     ){
-        val clientId = "105745651"
-        val clientSecret = "4b464165157e00e0f04475929fbc46616ec39dd6ad65947bc973c98f8768a458"
+        val clientId = "appId"
+        val clientSecret = "client_secret"
 
         val accessToken = getAccessToken(clientId, clientSecret)
         val authorization = "Bearer $accessToken"
